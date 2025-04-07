@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block title %}Impresiones 3D Inclusivas{% endblock %}
+
+{% block content %}
+<!-- video -->
+<div class="video">
+    <div class="overlay">
+        <div class="contenedor contenido-video">
+            <h2>Impresiones 3D Inclusivas</h2>
+            <p >Diseñamos prótesis inclusivas con precisión 3D</p><br>
+            <a href="{{ url_for('contacto') }}" class="btn">Contáctanos</a>
+        </div>
+    </div>
+    <video class="video-container" autoplay muted loop>
+        <source src="{{ url_for('static', filename='video/video2.mp4') }}" type="video/mp4">
+        <source src="{{ url_for('static', filename='video/video2.ogg') }}" type="video/ogg">
+        <source src="{{ url_for('static', filename='video/video2.webm') }}" type="video/webm">
+        Tu navegador no soporta video HTML5.
+    </video>
+</div>
+<!--contenedor 1 -->
+<section class="hero">
+    <div class="container">
+        <h2>Transformando vidas con tecnología avanzada</h2>
+        <p>En <strong>Impresiones 3D Inclusivas</strong>, nos especializamos en diseñar y fabricar prótesis
+            personalizadas utilizando la última tecnología en impresión 3D. Nuestro compromiso es proporcionar
+            soluciones innovadoras que mejoren la calidad de vida de nuestros usuarios.</p>
+        <img src="{{ url_for('static', filename='img/impresora3d.jpg') }}" alt="Impresora 3D trabajando en una prótesis"
+            style="width:100%; border-radius: 10px; margin-top: 20px;"> <br>
+
+        <a href="{{ url_for('servicios') }}" class="btn">Descubre cómo podemos ayudarte</a>
+    </div>
+</section>
+<!--contenedor 2 -->
+<section class="hero">
+    <div class="container">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos una empresa dedicada a la creación de prótesis personalizadas mediante tecnología avanzada de impresión
+            3D. Nuestra misión es mejorar la movilidad y calidad de vida de personas con amputaciones o deficiencias,
+            ofreciendo productos de alta precisión y accesibles.</p>
+        <img src="{{ url_for('static', filename='img/quienes-somos.jpg') }}"
+            alt="Equipo trabajando en diseño de prótesis 3D" style="width:100%; border-radius: 10px; margin-top: 20px;">
+        <div style="text-align: center;">
+            <a href="{{ url_for('quienes_somos') }}" class="btn btn-primary">Ver Historia</a>
+        </div>
+    </div>
+</section>
+<!--contenedor 3 -->
+<section class="services-preview">
+    <div class="container">
+        <h2>Nuestros Servicios</h2>
+        <div class="service">
+            <img src="{{ url_for('static', filename='img/mano.jpg') }}" alt="Prótesis de Mano"
+                style="width:100%; max-width: 300px;">
+            <h3>Prótesis de Mano</h3>
+            <p>Diseño y fabricación de prótesis de mano personalizadas para garantizar el máximo confort y
+                funcionalidad.</p>
+        </div>
+        <div class="service">
+            <img src="{{ url_for('static', filename='img/pie.jpg') }}" alt="Prótesis de Pierna"
+                style="width:100%; max-width: 300px;">
+            <h3>Prótesis de Pierna</h3>
+            <p>Soluciones innovadoras en prótesis de pierna para facilitar la movilidad y la autonomía de nuestros
+                clientes.</p>
+        </div>
+        <a href="{{ url_for('servicios') }}" class="btn">Ver todos nuestros servicios</a>
+    </div>
+</section>
+<!--contenedor 4 -->
+<section class="testimonials">
+    <div class="container">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonial">
+            <img src="{{ url_for('static', filename='img/carlos.jpg') }}" alt="Carlos con su prótesis"
+                style="width:100px; border-radius: 50%;">
+            <p class="texto">"La prótesis que me proporcionaron ha cambiado completamente mi vida. Puedo hacer cosas que
+                pensaba que nunca volvería a hacer. Gracias por su dedicación y apoyo."</p>
+            <p class="client-name">Carlos M.</p>
+        </div>
+        <div class="testimonial">
+            <img src="{{ url_for('static', filename='img/ana.jpg') }}" alt="Ana usando su prótesis"
+                style="width:100px; border-radius: 50%;">
+            <p>"El equipo de Impresiones 3D Inclusivas es increíble. Las prótesis son de alta calidad y el servicio fue
+                excepcional. Me siento más seguro con mi nueva prótesis."</p>
+            <p class="client-name">Ana R.</p>
+        </div>
+    </div>
+</section>
+<!--contenedor 5 -->
+<section class="contact">
+    <div class="container">
+        <h2>Contacta con nosotros</h2>
+        <p>¿Tienes preguntas o deseas más información? No dudes en ponerte en contacto con nosotros. Estamos aquí para
+            ayudarte.</p>
+        <img src="{{ url_for('static', filename='img/3d.jpg') }}" alt="Equipo atendiendo consultas"
+            style="width:100%; border-radius: 10px; margin-top: 20px;">
+        <a href="{{ url_for('contacto') }}" class="btn">Contáctanos</a>
+    </div>
+</section>
+
+{% endblock %}

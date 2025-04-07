@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Prótesis de Pie{% endblock %}
+
+{% block content %}
+<!--Contenido -->
+<div style="text-align: center;" class="container">
+    <h2 style="text-align: center;">Prótesis de Pie</h2>
+    <img src="{{ url_for('static', filename='img/pie1.jpg') }}" alt="Prótesis de Pie" class="img-fluid">
+    <p>En nuestro servicio de <strong>prótesis de pie</strong>, nos especializamos en ofrecer soluciones personalizadas
+        que restauran la movilidad y mejoran la calidad de vida de nuestros clientes. Sabemos lo importante que es para
+        las personas poder caminar de manera natural y sin dolor, por lo que nos dedicamos a diseñar y fabricar prótesis
+        de pie que se ajusten perfectamente a las necesidades y características específicas de cada usuario.</p>
+
+    <p>Contamos con un equipo de profesionales altamente capacitados que emplean las últimas tecnologías en el campo de
+        la biomecánica para desarrollar prótesis que no solo sean funcionales, sino también cómodas y seguras.
+        Utilizamos materiales livianos y resistentes que aseguran un ajuste perfecto, permitiendo a nuestros clientes
+        retomar sus actividades cotidianas con mayor facilidad y confianza.</p>
+
+    <p>Las prótesis de pie que ofrecemos están diseñadas para brindar estabilidad y comodidad al caminar, permitiendo a
+        los usuarios recuperar la movilidad en su vida diaria. Ya sea para caminar largas distancias, practicar deportes
+        o realizar actividades de bajo impacto, cada prótesis está adaptada para ofrecer el soporte necesario y
+        garantizar un paso seguro y cómodo.</p>
+
+    <p>Además de la funcionalidad, nuestras prótesis están pensadas para ofrecer una estética natural que se integra
+        perfectamente con la forma y tamaño del pie. Nos aseguramos de que el diseño de cada prótesis sea lo más
+        discreto posible, proporcionando una apariencia que no se distinga de un pie natural, sin comprometer la
+        funcionalidad.</p>
+
+    <p>Entendemos que la adaptación a una nueva prótesis de pie puede ser un desafío, por lo que ofrecemos un
+        acompañamiento personalizado durante todo el proceso. Nuestro equipo trabaja estrechamente con cada cliente para
+        asegurarse de que la prótesis se ajuste adecuadamente, y ofrecemos soporte adicional a través de sesiones de
+        rehabilitación y fisioterapia para facilitar la transición.</p>
+
+    <p>En resumen, nuestro servicio de <strong>prótesis de pie</strong> está diseñado para devolver la libertad de
+        movimiento y mejorar la calidad de vida de nuestros clientes. Nos comprometemos a proporcionar soluciones
+        innovadoras que no solo restablezcan la capacidad de caminar, sino que también ofrezcan comodidad, estética y
+        una mayor independencia en la vida diaria.</p>
+    <!--boton-->
+    <div style="text-align: center;">
+        <a href="{{ url_for('servicios') }}" class="btn btn-primary">Volver</a>
+    </div>
+</div>
+{% endblock %}

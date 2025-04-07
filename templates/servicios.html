@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}Servicios{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 style="text-align: center;">Nuestros Servicios</h2>
+
+    <!-- Servicio 1: Prótesis de Mano -->
+    <div class="service">
+        <h3>Prótesis de Mano</h3>
+        <div class="service-content">
+            <img src="{{ url_for('static', filename='img/mano1.jpg') }}" alt="Prótesis de Mano">
+            <p>Diseño y fabricación de prótesis de mano personalizadas para garantizar la comodidad y funcionalidad de
+                nuestros usuarios. Nos aseguramos de ofrecer productos innovadores y de alta calidad.</p>
+
+        </div>
+        <div style="text-align: center;">
+            <a href="{{ url_for('servicio_mano') }}" class="btn btn-primary">Leer Más</a>
+        </div>
+    </div>
+
+    <!-- Servicio 2: Prótesis de Pie -->
+    <div class="service">
+        <h3>Prótesis de Pie</h3>
+        <div class="service-content">
+            <img src="{{ url_for('static', filename='img/pie1.jpg') }}" alt="Prótesis de Pie">
+            <p>Soluciones innovadoras en prótesis de pie, adaptadas a las necesidades individuales de cada persona.
+                Nuestro objetivo es mejorar la calidad de vida a través de tecnologías avanzadas.</p>
+        </div>
+        <div style="text-align: center;">
+            <a href="{{ url_for('servicio_pie') }}" class="btn btn-primary">Leer Más</a>
+        </div>
+    </div>
+
+    <!-- Servicio 3: Rehabilitación y Adaptación -->
+    <div class="service">
+        <h3>Rehabilitación y Adaptación</h3>
+        <div class="service-content">
+            <img src="{{ url_for('static', filename='img/recuperacion.jpg') }}" alt="Rehabilitación y Adaptación">
+            <p>Servicios de rehabilitación personalizados para facilitar la adaptación al uso de las prótesis,
+                asegurando una transición cómoda y exitosa.</p>
+        </div>
+        <div style="text-align: center;">
+            <a href="{{ url_for('servicio_recuperacion') }}" class="btn btn-primary">Leer Más</a>
+        </div>
+    </div>
+
+    <!-- Servicio 4: Consulta y Asesoría Técnica -->
+    <div class="service">
+        <h3>Consulta y Asesoría Técnica</h3>
+        <div class="service-content">
+            <img src="{{ url_for('static', filename='img/cosulta.jpg') }}" alt="Consulta y Asesoría Técnica">
+            <p>Ofrecemos asesoría técnica experta para ayudar a nuestros clientes a elegir la prótesis adecuada según
+                sus necesidades específicas.</p>
+        </div>
+        <div style="text-align: center;">
+            <a href="{{ url_for('servicio_consulta') }}" class="btn btn-primary">Leer Más</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

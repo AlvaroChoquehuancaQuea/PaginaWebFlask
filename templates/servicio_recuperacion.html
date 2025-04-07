@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Rehabilitación y Adaptación{% endblock %}
+
+{% block content %}
+
+<!--Contenido-->
+<div class="container" style="text-align:center;">
+    <h2 style="text-align: center;">Rehabilitación y Adaptación</h2>
+    <img src="{{ url_for('static', filename='img/recuperacion.jpg') }}" alt="Rehabilitación y Adaptación"
+        class="img-fluid mb-3">
+    <p>En nuestro servicio de <strong>rehabilitación y adaptación</strong>, nos dedicamos a ofrecer un acompañamiento
+        completo para aquellos que utilizan prótesis y necesitan ayuda para adaptarse a su nuevo estilo de vida. Sabemos
+        que el proceso de adaptación puede ser desafiante, por lo que nuestro objetivo es brindar el apoyo necesario
+        para que cada cliente pueda integrarse a sus actividades cotidianas de manera efectiva y sin dificultades.</p>
+
+    <p>Contamos con un equipo multidisciplinario de profesionales, incluyendo fisioterapeutas, terapeutas ocupacionales
+        y especialistas en entrenamiento funcional, que trabajan en conjunto para ofrecer un plan de rehabilitación
+        personalizado. Este plan está diseñado para asegurar que cada cliente pueda recuperar su movilidad, fuerza y
+        confianza en el uso de su prótesis de manera gradual y segura.</p>
+
+    <p>Durante el proceso de rehabilitación, nos enfocamos en enseñar a nuestros clientes cómo utilizar correctamente
+        sus prótesis, brindando asesoramiento sobre los movimientos, posturas y técnicas que favorecen la correcta
+        utilización de la prótesis. Además, ofrecemos ejercicios y programas de entrenamiento diseñados específicamente
+        para mejorar la funcionalidad y el confort al caminar, moverse o realizar actividades específicas.</p>
+
+    <p>Además de la parte física, entendemos la importancia del bienestar emocional en el proceso de adaptación. Por
+        ello, ofrecemos un enfoque integral que también abarca el apoyo psicológico necesario para ayudar a nuestros
+        clientes a superar cualquier desafío emocional que puedan enfrentar durante su adaptación a la prótesis.
+        Queremos asegurarnos de que cada cliente se sienta cómodo y seguro en su nueva realidad, tanto física como
+        emocionalmente.</p>
+    <!--boton-->
+    <div style="text-align: center;">
+        <a href="{{ url_for('servicios') }}" class="btn btn-primary">Volver</a>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block title %}Quiénes Somos{% endblock %}
+
+{% block content %}
+<div class="container quienes-somos">
+    <h2 style="text-align: center;">Nuestra Historia</h2>
+    <!--Contenido 1-->
+    <div class="mision-content"
+        style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px; margin-bottom: 40px;">
+        <div style="flex: 1;">
+            <p>Fundada en 2020, <strong>Impresiones 3D Inclusivas</strong> es una empresa comprometida con la innovación
+                y la inclusión, especializada en el diseño y la fabricación de prótesis personalizadas mediante
+                tecnología de impresión 3D. Nuestro objetivo es proporcionar soluciones accesibles y funcionales a
+                personas que requieren prótesis, garantizando una calidad de vida mejorada y una adaptación óptima a sus
+                necesidades.</p>
+            <p>
+                Somos una empresa dedicada a la innovación y la inclusión, especializada en la fabricación de prótesis
+                personalizadas mediante impresión 3D. Nuestro propósito es mejorar la calidad de vida de quienes las
+                necesitan, brindando soluciones funcionales, accesibles y adaptadas a cada persona.
+                <a href="#" style="color: blue;">Ver más</a>
+            </p>
+        </div>
+        <!--Imagen 1-->
+        <div style="flex: 1;">
+            <img src="{{ url_for('static', filename='img/equipo3d.jpg') }}" alt="Equipo trabajando en impresión 3D"
+                style="width:100%; border-radius: 10px;">
+        </div>
+    </div>
+
+
+    <!--texto-->
+    <h3>Misión</h3>
+    <p>Nuestra misión es liderar la industria de la prótesis personalizada utilizando la tecnología de impresión 3D,
+        ofreciendo productos accesibles y de alta calidad, adaptados a las necesidades únicas de cada persona. Buscamos
+        proporcionar soluciones que no solo mejoren la funcionalidad, sino también la estética y el confort de nuestros
+        clientes. Nos comprometemos a trabajar con empatía y dedicación, colaborando estrechamente con cada usuario para
+        garantizar una experiencia personalizada. A través de la innovación constante, la investigación aplicada y la
+        colaboración interdisciplinaria, aspiramos a democratizar el acceso a tecnologías avanzadas, reduciendo costos y
+        tiempos de fabricación, y contribuyendo así a un mundo más inclusivo, donde todas las personas tengan la
+        oportunidad de vivir con dignidad, independencia y bienestar.</p>
+
+
+    <!--Contenido 2-->
+    <div class="mision-container"
+        style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px; margin-bottom: 30px;">
+        <!--Imagen 2-->
+        <div style="flex: 1;">
+            <img src="{{ url_for('static', filename='img/mision.jpg') }}" alt="Impresora 3D en acción"
+                style="width: 100%; height: auto; border-radius: 10px;">
+        </div>
+        <div style="flex: 2;">
+            <h3>Visión</h3>
+            <p>Ser reconocidos como el referente global en la fabricación de prótesis personalizadas a través de
+                impresión 3D, revolucionando la forma en que las personas perciben y utilizan las prótesis, promoviendo
+                la igualdad de oportunidades y el acceso a la tecnología avanzada para todos. Aspiramos a transformar
+                vidas no solo mediante la entrega de soluciones físicas, sino también empoderando a cada individuo con
+                confianza, autonomía y bienestar. Nuestra visión abarca un futuro donde la innovación tecnológica esté
+                al servicio de la humanidad, eliminando barreras sociales y económicas, y estableciendo un nuevo
+                estándar de accesibilidad, funcionalidad y diseño en el mundo de las prótesis personalizadas.</p>
+        </div>
+    </div>
+
+    <!--Texto 2-->
+    <h3>Valores</h3>
+    <ul style="list-style-type: none; padding: 0;">
+        <div class="texto2">
+            <li><strong> Innovación:</strong> Utilizamos las últimas tecnologías para crear soluciones eficientes y
+                modernas.</li>
+            <li><strong> Accesibilidad:</strong> Nos aseguramos de que nuestras prótesis sean accesibles para todos, sin
+                importar su situación económica.</li>
+            <li><strong> Compromiso:</strong> Estamos comprometidos con el bienestar de nuestros clientes,
+                proporcionando
+                productos de alta calidad y un servicio excepcional.</li>
+            <li><strong> Inclusión:</strong> Creemos en un mundo inclusivo, donde todas las personas, sin importar sus
+                limitaciones físicas, tengan acceso a soluciones adecuadas.</li>
+            <li><strong> Empatía:</strong> Nos esforzamos por comprender las necesidades de nuestros clientes y
+                ofrecerles
+                productos que realmente mejoren su calidad de vida.</li>
+        </div>
+    </ul>
+
+    <h3>¿Por qué elegirnos?</h3>
+    <p>En <strong>Impresiones 3D Inclusivas</strong> entendemos que cada persona es única. Por ello, trabajamos de cerca
+        con nuestros clientes para crear soluciones personalizadas, asegurando la máxima calidad y satisfacción. Nuestra
+        experiencia en el uso de la tecnología de impresión 3D nos permite ofrecer productos innovadores, rápidos de
+        producir y a precios accesibles.</p>
+    <div style="text-align: center;">
+        <a href="{{ url_for('index') }}" class="btn btn-primary">Volver</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Consulta y Asesoría Técnica{% endblock %}
+
+{% block content %}
+
+<!--Contenedor -->
+<div style="text-align: center;" class="container">
+    <h2 style="text-align: center;">Consulta y Asesoría Técnica</h2>
+    <img src="{{ url_for('static', filename='img/cosulta.jpg') }}" alt="Consulta y Asesoría Técnica"
+        class="img-fluid mb-3">
+    <p>En nuestro servicio de <strong>consulta y asesoría técnica</strong>, ofrecemos un acompañamiento experto para
+        ayudar a nuestros clientes a tomar decisiones informadas sobre las prótesis más adecuadas para sus necesidades.
+        Sabemos que elegir la prótesis correcta es crucial para garantizar la funcionalidad, comodidad y calidad de
+        vida, por lo que brindamos asesoramiento personalizado a cada persona que se acerca a nosotros en busca de
+        soluciones.</p>
+
+    <p>Nuestro equipo de profesionales altamente capacitados está disponible para proporcionar información detallada
+        sobre los diferentes tipos de prótesis disponibles, explicando las ventajas, desventajas y características de
+        cada opción. Nos aseguramos de que cada cliente entienda las opciones que tiene a su disposición y las
+        implicaciones de su elección, desde los materiales hasta las características funcionales de la prótesis.</p>
+
+    <p>Durante la consulta, realizamos un análisis exhaustivo de las necesidades individuales de cada cliente, tomando
+        en cuenta factores como la movilidad, el estilo de vida, las expectativas de uso y las preferencias personales.
+        En base a esta evaluación, proporcionamos recomendaciones personalizadas y ayudamos a seleccionar la prótesis
+        que mejor se adapte a sus requerimientos, garantizando que el cliente reciba la solución más adecuada a sus
+        circunstancias.</p>
+
+    <p>Además de la selección de la prótesis, ofrecemos asesoría técnica continua a lo largo del proceso de ajuste y
+        adaptación. Nuestro equipo está disponible para resolver cualquier duda que pueda surgir sobre el uso y cuidado
+        de la prótesis, y estamos comprometidos a brindar apoyo en todo momento para asegurar que nuestros clientes se
+        sientan cómodos y seguros con su nueva prótesis.</p>
+    <!--boton-->
+    <div style="text-align: center;">
+        <a href="{{ url_for('servicios') }}" class="btn btn-primary">Volver</a>
+    </div>
+</div>
+{% endblock %}

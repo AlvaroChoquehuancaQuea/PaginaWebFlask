@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>¡Envíanos tu mensaje!</h2>
+
+    <!--Formulario de contacto-->
+    <form method="POST" action="{{ url_for('contacto') }}">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{ form.nombre.label }} {{ form.nombre(class="form-control", placeholder="Escribe tu nombre") }}
+        </div>
+        <div class="form-group">
+            {{ form.correo.label }} {{ form.correo(class="form-control", placeholder="Ejemplo: correo@dominio.com") }}
+        </div>
+        <div class="form-group">
+            {{ form.telefono.label }} {{ form.telefono(class="form-control", placeholder="Escribe tu número de teléfono") }}
+        </div>
+        <div class="form-group">
+            {{ form.asunto.label }}
+            {{ form.asunto(class="form-control", placeholder="Selecciona un asunto") }}
+        </div>
+
+        <div class="form-group">
+            {{ form.mensaje.label }} {{ form.mensaje(class="form-control", placeholder="Escribe tu mensaje...") }}
+        </div>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-primary") }}
+        </div>
+    </form>
+</div>
+<!--Mapa ficticio código embebido de Google Maps)-->
+<div style="text-align: center;">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.7062514012327!2d-68.20597688909692!3d-16.49040522993567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915ede3b06f223dd%3A0x755fe5eb949229c0!2sGQ5V%2BQFP%2C%20El%20Alto!5e0!3m2!1ses!2sbo!4v1743984356979!5m2!1ses!2sbo"
+        width="1000" height="450" style="border:0; display: block; margin: auto;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+{% endblock %}

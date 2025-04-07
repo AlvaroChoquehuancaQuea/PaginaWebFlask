@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block title %}Noticias{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h2>Últimas Noticias</h2>
+    <!-- Artículo 1-->
+    <article class="news-item">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ url_for('static', filename='img/noticias1.jpg') }}" alt="Innovación en Materiales"
+                    class="img-fluid">
+            </div>
+            <div class="col-md-8">
+                <h3>La impresión 3D se supera a sí misma creando una mano robótica funcional con músculos, ligamentos y
+                    tendones</h3>
+                <p>Unos investigadores alemanes han utilizado un material flexible para simular la estructura interna de
+                    dicha parte del cuerpo y su movilidad, logrando imitar con precisión tanto su forma como su
+                    comportamiento dinámico. Explican que este avance podría usarse para robots blandos en un futuro,
+                    especialmente en aplicaciones médicas o en entornos donde se requiera una interacción delicada con
+                    humanos o estructuras frágiles.
+                    <a href="https://www.20minutos.es/minuteca/impresoras-3d/1/" style="color: blue;">Ver más</a>
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <!-- Artículo 2 -->
+    <article class="news-item">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ url_for('static', filename='img/noticia2.jpg') }}" alt="Impresión 3D en prótesis"
+                    class="img-fluid">
+            </div>
+            <div class="col-md-8">
+                <h3>Nueva impresora Stratasys y un futuro centro de impresión 3D</h3>
+                <p>La impresora permite la carga de tres materiales, posibilitando la impresión 3D simultánea en
+                    diferentes colores y materiales (suaves y/o rígidos). Esta tecnología es ideal para la investigación
+                    clínica, ya que facilita la creación de modelos más realistas que simulan diversos tipos de tejidos
+                    y estructuras, permitiendo analizar diferentes propiedades mecánicas. <a
+                        href="https://ingbiomedica.uniandes.edu.co/es/noticias/nueva-impresora-stratasys-futuro-centro-impresion-3d"
+                        style="color: blue;">Ver más</a></p>
+            </div>
+        </div>
+    </article>
+
+    <!-- Artículo 3 -->
+    <article class="news-item">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ url_for('static', filename='img/noticia3.jpg') }}" alt="Colaboración Internacional"
+                    class="img-fluid">
+            </div>
+            <div class="col-md-8">
+                <h3>Startup peruana apuesta por la impresión 3D para el éxito de cirugías complejas</h3>
+                <p>Las intervenciones quirúrgicas son muy intuitivas hoy en día, y la impresión 3D -y toda la tecnología
+                    en torno a ella- se convierte en una aliada para lograr impactos importantes, como reducir en 40% el
+                    tiempo en sala (dependiendo del tipo de cirugía), lo que a su vez significa menor tiempo de
+                    anestesia y menor pérdida del volumen de sangre durante la operación. <a
+                        href="https://andina.pe/agencia/noticia-startup-peruana-apuesta-por-impresion-3d-para-exito-cirugias-complejas-886309.aspx"
+                        style="color: blue;">Ver más</a></p>
+            </div>
+        </div>
+    </article>
+
+    <!-- Artículo 4 -->
+    <article class="news-item">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ url_for('static', filename='img/noticia4.jpg') }}" alt="Iniciativas comunitarias"
+                    class="img-fluid">
+            </div>
+            <div class="col-md-8">
+                <h3>La impresión 3D en la odontología, ¿cómo está revolucionando este sector?</h3>
+                <p>La fabricación aditiva ha llegado a un número significativo de sectores e industrias, ofreciendo
+                    ventajas en términos de productividad, costes, personalización y tiempos de fabricación. En
+                    odontología, la impresión 3D destaca por facilitar la creación de soluciones dentales personalizadas
+                    para cada paciente. <a href="https://www.3dnatives.com/es/impresion-3d-en-la-odontologia-250320192/"
+                        style="color: blue;">Ver más</a></p>
+            </div>
+        </div>
+    </article>
+
+
+</div>
+
+{% endblock %}

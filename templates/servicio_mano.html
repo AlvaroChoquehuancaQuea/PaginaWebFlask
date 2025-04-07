@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Prótesis de Mano{% endblock %}
+
+{% block content %}
+
+<!--Contenido-->
+<div style="text-align: center;" class="container">
+    <h2 style="text-align: center;">Prótesis de Mano</h2>
+    <img src="{{ url_for('static', filename='img/mano1.jpg') }}" alt="Prótesis de Mano" class="img-fluid">
+    <p>En nuestro servicio de <strong>prótesis de mano</strong>, nos enorgullece ofrecer soluciones altamente
+        personalizadas que no solo devuelven la funcionalidad, sino también la confianza y comodidad de quienes lo
+        necesitan. Sabemos que cada persona tiene necesidades y expectativas distintas, por lo que nos enfocamos en
+        diseñar prótesis que se ajusten perfectamente a las características físicas de cada usuario, así como a sus
+        requerimientos funcionales.</p>
+
+    <p>Nuestro equipo de expertos en diseño y tecnología trabaja incansablemente para desarrollar prótesis de mano que
+        no solo sean funcionales, sino que también ofrezcan una integración natural con el cuerpo de la persona.
+        Utilizamos los materiales más avanzados y las técnicas más innovadoras para asegurar que cada prótesis sea
+        ligera, duradera y fácil de mantener. La precisión y la calidad son nuestras prioridades, asegurando que cada
+        prótesis sea una extensión perfecta de la mano, brindando comodidad y capacidad de movimiento.</p>
+
+    <p>Además de restaurar la funcionalidad, nuestras prótesis están diseñadas para adaptarse a los estilos de vida de
+        nuestros clientes. Ya sea que necesiten una prótesis para realizar actividades cotidianas, para practicar
+        deportes, o incluso para fines estéticos, nuestro equipo trabaja estrechamente con cada persona para garantizar
+        que el diseño final cumpla con sus expectativas. Ofrecemos una amplia variedad de opciones para que cada usuario
+        pueda encontrar la solución que mejor se ajuste a sus necesidades, gustos y preferencias.</p>
+
+    <p>Entendemos que el proceso de adaptación a una prótesis puede ser desafiante, tanto física como emocionalmente.
+        Por ello, no solo nos enfocamos en el aspecto técnico, sino también en el acompañamiento y apoyo emocional a lo
+        largo de todo el proceso. Nuestro objetivo es que cada usuario recupere su independencia, confianza y calidad de
+        vida.</p>
+
+    <p>En resumen, nuestro servicio de <strong>prótesis de mano</strong> está comprometido con mejorar la vida de
+        quienes confían en nosotros. Nos esforzamos por ofrecer productos innovadores, cómodos y funcionales que ayuden
+        a cada persona a superar los retos derivados de la pérdida de una mano. Estamos aquí para proporcionar
+        soluciones que no solo restauren la capacidad de agarre y manipulación, sino que también aporten una mejora
+        significativa en el bienestar físico y emocional de nuestros usuarios.</p>
+
+
+    <div style="text-align: center;">
+        <a href="{{ url_for('servicios') }}" class="btn btn-primary">Volver</a>
+    </div>
+</div>
+{% endblock %}
